@@ -16,7 +16,7 @@ int main() {
   string date;
   int TestResult;
   int count = 0;
-  int cumulative_cases = 0;
+  double cumulative_cases = 0;
 
   // declare stream variables
   ifstream inFile; // needed to access the file we want to load
@@ -54,14 +54,14 @@ int main() {
     }
   outFile << "Totoal Number of cases: " << cumulative_cases << endl;
   outFile << "Number of persons tested: " << count << endl;
+
+  // report prevalence as a % with 2 decimals
+  outFile << fixed << showpoint << setprecision(2);
+  outFile << "The prevalence is: ";
+  outFile << ((static_cast<double>(cumulative_cases)) / count) * 100;
+  outFile << " %" << endl;
   
   inFile.close();
-  
-
-  
-
-  
-  
   outFile.close();
   
   return 0;
