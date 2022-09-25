@@ -11,32 +11,29 @@ using namespace std;
 
 int main() {
 
-  double Temp;  // input temperature
+  double Temp = 2; // Measured temperature
   cin >> Temp;
+  
   
   double Ws;  // wind speed variable
   const double K1 = 13.12; // const double for conversion factors
   const double K2 = 11.37;
   const double K3 = 0.3965;
 
-  for (int Temp = 2; Temp <= 10; Temp += 4)
+  for (int i = Temp; i <= 10; i += 4)
     {
-      cin  >> Ws; // enter wind speed variable into loop
+      cin  >> Ws = 5; // enter wind speed variable into loop
 
       for (int Ws = 5; Ws <= 11; Ws += 2)
         {
-          //equation
-        }
-      
-      
-      
-      
+          double WCI = K1 + (0.6125 * Temp) - K2 * pow(Ws, 0.16) + K3 * Temp * (Ws, 0.16);
+
+          cout << setw(3) << "Measured Temperature = " << Temp << " C" << ' ';
+
+          cout << setw(3) << "Wind Speed = " << Ws << " km/hr" << ' ';
+
+          cout << setw(3) << " Wind Chill Index = " << WCI << endl;
+        }     
     }
-
-  
-  
-
-
-
   return 0;
 }
