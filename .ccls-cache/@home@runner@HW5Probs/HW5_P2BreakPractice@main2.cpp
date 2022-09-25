@@ -26,7 +26,7 @@ int main() {
       // check to see if data is valid
       if (dataTemp >= 0)
       {
-        // update cumulative value of all data and number of data points loaded
+        // update cumulative value of all data and number of             data points loaded
         sumData += dataTemp;
         counter++;
       }
@@ -42,11 +42,6 @@ int main() {
   cout << "The sum of valid data: " << sumData << endl;
   cout << "The number of valid data points: " << counter << endl;
   cout << "The average of valid data points: " << (static_cast<double>(sumData) / counter) << endl;
-  
-
-
-
-
   
   return 0;
 }
