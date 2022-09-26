@@ -20,14 +20,11 @@ int main() {
   //load data in while loop
   while (inFile >> dataTemp)
     {
-      inFile >> dataTemp;
-      // cout << dataTemp << endl; (void code)
-
       // check to see if data is valid
       if (dataTemp >= 0)
       {
         // update cumulative value of all data and number of             data points loaded
-        sumData = sumData + dataTemp;
+        sumData += dataTemp;
         counter++;
       }
 

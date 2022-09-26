@@ -20,9 +20,6 @@ int main() {
   //load data in while loop
   while (inFile >> dataTemp)
     {
-      inFile >> dataTemp;
-      // cout << dataTemp << endl; (void code)
-
       // check to see if data is valid
       if (dataTemp >= 0)
       {
@@ -33,7 +30,7 @@ int main() {
 
       else // the value is negative and should exit
       {
-        cout << "Nagative value encountered: " << dataTemp << "." << endl;
+        cout << "Negative value encountered: " << dataTemp << "." << endl;
         cout << "Will not continue data usage... " << endl;
         break;
       }
