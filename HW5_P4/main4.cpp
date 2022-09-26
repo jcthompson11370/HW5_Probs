@@ -9,34 +9,33 @@ using namespace std;
 
 int main() {
 
-  int DistValues;
   bool modulo [42];
   
-    for (int i = 0; i < 42; i++) 
+    for (int i = 1; i < 42; i++) 
     {
-        modulo[i] = false;
-    
+        modulo [i] = false;
+    }
 
-      for (int i = 0; i < 10; i++) 
+    for (int i = 0; i < 10; i++)
       {
         int num_values;
-      
+        
         cin >> num_values;
-      
+        
         modulo [num_values % 42] = true;
       }
 
-      int DistValues = 0;
+    int dist_value = 0;
 
-      for (int i = 0; i < 42; i++) 
+    for (int i = 0; i < 42; i++) 
       {
         if (modulo [i]) 
         {
-         DistValues++;
+          dist_value++;
         }
       }
-    }
- cout << DistValues << endl;
+
+    cout << dist_value << endl;
 
    return 0;
 }
