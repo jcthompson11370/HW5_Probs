@@ -20,18 +20,15 @@ int main() {
 
   for (int Temp = 2; Temp <= 10; Temp += 4)
     {
-      cout << "Ws variable" << endl;
-      cin  >> Ws; // enter wind speed variable into loop
-
       for (int Ws = 5; Ws <= 11; Ws += 2)
         {
           double WCI = K1 + (0.6125 * Temp) - (K2 * pow(Ws, 0.16)) + (K3 * Temp * (Ws, 0.16));
 
-          cout << setw(3) << "Measured Temperature = " << Temp << " C" << ' ';
+          cout << "Measured Temp.  = " << Temp << " C" << ' ';
 
-          cout << setw(3) << "Wind Speed = " << Ws << " km/hr" << ' ';
+          cout << "  Wind Speed = " << Ws << " km/hr" << endl;
 
-          cout << setw(3) << " Wind Chill Index = " << WCI << endl;
+          cout << "Wind Chill Ind. = " << WCI << endl;
         }     
     }
   return 0;
