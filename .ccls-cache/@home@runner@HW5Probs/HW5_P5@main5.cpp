@@ -16,11 +16,11 @@ int main() {
   double AreaTotal; //area of all lawns in sqr. meters
 
   //input variables
-  cout << "input number of lawns: " << endl;
-  cin >> NumOfLawns;
-
   cout << "input cost of seed: " << endl;
   cin >> SeedCost;
+
+  cout << "input number of lawns: " << endl;
+  cin >> NumOfLawns;
 
   //start loop
   for (int i = 0; i < NumOfLawns; i++)
