@@ -32,6 +32,9 @@ int main() {
       
       AreaTotal += length * width; // equation for area of a sqr. or rect. 
     }
-
+  
+  cout << setprecision(6) << fixed;
+  cout << "Cost to sow all lawns = $" << SeedCost * AreaTotal << endl;
+  
   return 0;
 }
