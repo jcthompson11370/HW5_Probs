@@ -13,12 +13,12 @@ int main() {
 
   cout << "Enter ten number values: " << endl;
   
-    for (int i = 1; i < 42; i++) 
+    for (int i = 0; i < 42; i++) 
     {
         modulo [i] = false;
     }
 
-    for (int i = 0; i < 10; i++)
+    for (int k = 0; k < 10; k++)
       {
         int num_values;
         
@@ -29,9 +29,9 @@ int main() {
 
     int dist_value = 0;
 
-    for (int i = 0; i < 42; i++) 
+    for (int g = 0; g < 42; g++) 
       {
-        if (modulo [i]) 
+        if (modulo [g]) 
         {
           dist_value++;
         }
