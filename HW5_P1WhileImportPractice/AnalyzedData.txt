@@ -1,4 +1,4 @@
 09.01.2020
-Totoal Number of cases: 3
-Number of persons tested: 76
-The prevalence is: 3.95 %
+Totoal Number of cases: 4
+Number of persons tested: 77
+The prevalence is: 5.19 %
